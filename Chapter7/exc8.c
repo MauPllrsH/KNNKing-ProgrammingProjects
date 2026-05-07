@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main(void){
 	int hour, minutes, totalMinutes, resultDepNum, min, diff;
+        char pm_or_am;
 	
 	/* Store all Departure and Arrival Times */
 	int dep1Hour = 8, dep1Min = 0, arr1Hour = 10, arr1Min = 16;
@@ -13,8 +15,13 @@ int main(void){
 	int dep7Hour = 19, dep7Min = 0, arr7Hour = 21, arr7Min = 20;
 	int dep8Hour = 21, dep8Min = 45, arr8Hour = 23, arr8Min = 58;
 	
-	printf("Enter a 24-hour time: ");
-	scanf("%d:%d", &hour, &minutes);
+	printf("Enter a 12-hour time: ");
+	scanf("%d:%d %c", &hour, &minutes, &pm_or_am);
+
+        pm_or_am = toupper(pm_or_am);
+        if(pm_or_am == 'P'){
+                hour += 12;
+        }
 	
 	totalMinutes = (hour * 60) + minutes;
 
