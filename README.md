@@ -6,4 +6,5 @@ My solutions and exercises while working through the book.
 - [x] Chapter 4
 - [x] Chapter 5
 - [x] Chapter 6
-- [ ] Chapter 7 (in progress)
+- [x] Chapter 7
+- [ ] Chapter 8
