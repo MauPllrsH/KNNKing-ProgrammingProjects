@@ -10,7 +10,7 @@ int main(void){
     - long long = 20
     - float = 34 - then inf
     - double = 170 - then inf
-    - long double = 
+    - long double = 170 - then inf
     */
     long double factorial = 1;
     int num;
